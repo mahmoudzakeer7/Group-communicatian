@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+* {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(244, 244, 244);
+    display: flex;
+}
+
+.img-box {
+    width: 50px;
+    ;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+
+.img-box img {
+    width: 100%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile h2 {
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+
+.menu {
+    background-color: #123;
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.menu:hover {
+    width: 260px;
+}
+
+ul {
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: 0.5s;
+}
+
+ul li a:hover,
+.data-info .box:hover {
+    background-color: #ffffff55;
+}
+
+.log-out {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.log-out a {
+    background-color: #a00;
+}
+
+ul li a i {
+    /* icons like lines */
+    font-size: 30px;
+}
+
+.content {
+    width: 100%;
+    margin: 10px;
+}
+
+.title-info {
+    background-color: rgb(1, 128, 255);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.data-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: -153px 0px ;
+}
+
+.data-info .box {
+    background-color: #123;
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data-info .box i {
+    font-size: 40px;
+
+}
+
+.data-info .box .data {
+    text-align: center;
+}
+
+.data-info .box .data span {
+    font-size: 30px;
+}
+
+/* chart pie */
+
+.chartBody {
+    box-sizing: border-box;
+    background: local;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.containerPie {
+    background: local;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(187, 184, 184, 0.3);
+    width: 740px;
+}
+
+.containerPie h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #dbdbdb;
+}
+
+/* @media all and (max-width: 780px) {
+    .container {
+        width: auto;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .container {
+        padding: 0px 20px;
+    }
+} */
+
+#chart {
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    /* max-width: 650px;*/
+    margin: 35px auto;
+}
+
+/* .data-info .box #chart-energy{
+    background-color: rgb(67, 116, 166);
+        height: 150px;
+        flex-basis: 150px;
+        flex-grow: 1;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+ } */
+
+#chart-energy {
+
+    position: absolute;
+    bottom: -80px;
+    right: 50px;
+    height: 650px;
+    width: 80%;
+    margin: 40px 0px;
+}
+
+
+table {
+    border-spacing: 80px 50px;
+}
+
+.crop-helth{
+    margin:-205px 0px;
+}
+
+.crop-box {
+    background-color: #123;
+    height: 200px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 30px #123;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.crop-box .crop-img img {
+    height: 200px;
+    width: 200px;
+    border-radius: 30px;
+
+}
+
+.green-area,
+.temp,
+.humidity,
+.soil-moisture,
+.light,
+.ph,
+.conductivity,
+.rainfall,
+.flow-control {
+    background-color: #123;
+    height: 200px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 30px #123;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.green-area p,
+.temp p,
+.humidity p,
+.soil-moisture p,
+.light p,
+.ph p,
+.conductivity p,
+.rainfall p,
+.flow-control p {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.green-area span,
+.temp span,
+.humidity span,
+.soil-moisture span,
+.light span,
+.ph span,
+.conductivity span,
+.rainfall span,
+.flow-control span {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.sence {
+    border: solid 3px greenyellow;
+    background-color: aquamarine;
+    color: #123;
+    border-radius: 30px;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+
+.control {
+    background-color: #123;
+    height: 91%;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 30px #123;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 10px;
+    margin: -195px 0px;
+    /* align-content: center; */
+}
+
+.control .screen {
+    background-color: #123;
+    height: 400px;
+    width: 500px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+    border: 3px solid navajowhite;
+}
+
+.control .screen p {
+    color: #dbdbdb;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+}
+
+.control .control-key {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.control .control-key button {
+    height: 50px;
+    width: 88px;
+    padding: 20px;
+    background-color: rgb(42, 107, 27);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.control .control-key button span {
+    color: rgb(214, 214, 214);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.control .control-key button:hover {
+    background-color: aqua;
+    border: solid #a00 3px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
