@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@drawable/k"
+    tools:context=".pestcontrol">
+    <Button
+        android:id="@+id/hello11"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/p"
+        android:drawableLeft="@drawable/bar_chart"
+
+        android:text="line Chart"
+        android:textColor="#F4EFEF" />
+
+    <Button
+        android:id="@+id/hello12"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/p"
+        android:drawableLeft="@drawable/baseline_align_horizontal_left_24"
+
+        android:text="Data"
+        android:textColor="#F6F5F5" />
+
+    <Button
+        android:id="@+id/hello13"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/p"
+        android:drawableLeft="@drawable/baseline_adjust_24"
+
+        android:text="Adjustments"
+        android:textColor="#F3EDED" />
+
+
+</LinearLayout>
