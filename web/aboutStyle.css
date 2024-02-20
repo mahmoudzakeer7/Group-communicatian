@@ -5,10 +5,10 @@
 }
 
 body {
-   
-    min-height :1500px;
+
+    min-height: 1500px;
     background: #0a2a43;
-    
+
 }
 
 header {
@@ -30,7 +30,7 @@ header {
     color: #17e8a2;
 }
 
-section{
+section {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -40,7 +40,7 @@ section{
     align-items: center;
 }
 
-section img::before{
+section img::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -50,7 +50,7 @@ section img::before{
     z-index: 10000;
 }
 
-section img::after{
+section img::after {
     content: '';
     position: absolute;
     top: 0;
@@ -62,7 +62,7 @@ section img::after{
     mix-blend-mode: color;
 }
 
-section img{
+section img {
     position: absolute;
     top: 0;
     left: 0;
@@ -72,13 +72,37 @@ section img{
     pointer-events: none;
 }
 
-#text{
+#text {
     position: relative;
     color: #fff;
     font-size: 10em;
     z-index: 1;
 }
 
-#road{
+#road {
     z-index: 2;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.title h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.list {
+    margin: 70px;
+}
+
+.list ul li {
+    margin: 30px;
+    font-size: 80px;
+    list-style: none;
+    color: #17e8a2;
 }
