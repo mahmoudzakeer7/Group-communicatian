@@ -5,10 +5,10 @@ const btnPopup = document.querySelector('.btnLogin-popup');
 const iconClose = document.querySelector('.icon-close');
 const welcomeBox = document.querySelector('.welcome-box');
 
-// const name = document.querySelector('.userName') || null;
-// const email = document.querySelector('.email');
-// const password = document.querySelector('.password');
-// const submitBtn = document.querySelector('.btn');
+const name = document.querySelector('.userName') || null;
+const email = document.querySelector('.email');
+const password = document.querySelector('.password');
+const submitBtn = document.querySelector('.btn');
 
 // if (name == null) { // means login page is open
 //     submitBtn.addEventListener('click', () => {
