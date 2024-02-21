@@ -52,33 +52,15 @@ CREATE TABLE `crops` (
   CONSTRAINT `crops_ibfk_2` FOREIGN KEY (`farm_id`) REFERENCES `farms` (`id`))
   ENGINE=InnoDB ;
 -- -----------------------------------------------------
--- Table `farmacy`.`sensors`
--- -----------------------------------------------------
-CREATE TABLE `sensors` (
-  `sensor_id` int NOT NULL AUTO_INCREMENT,
-  `sensor_name` varchar(50) NOT NULL,
-  `sensor_type` varchar(50) NOT NULL,
-  `location` varchar(50) NOT NULL,
-  `status` enum('active','inactive') NOT NULL DEFAULT 'active',
-  `farm_id` int NOT NULL,
-  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (`sensor_id`),
-  KEY `farm_id` (`farm_id`),
-  CONSTRAINT `fk_sensors_farms` FOREIGN KEY (`farm_id`) REFERENCES `farms` (`id`))
-  ENGINE=InnoDB;
--- -----------------------------------------------------
 -- Table `farmacy`.`sensor_data`
 -- -----------------------------------------------------
 CREATE TABLE `sensor_data` (
-  `data_id` int NOT NULL AUTO_INCREMENT,
-  `sensor_id` int NOT NULL,
+  `sensor_id` int NOT NULL AUTO_INCREMENT,
   `reading` float NOT NULL,
   `reading_time` datetime NOT NULL,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (`data_id`),
+  PRIMARY KEY (`sensor_id`),
   KEY `sensor_id` (`sensor_id`),
-  CONSTRAINT `sensor_data_ibfk_1` FOREIGN KEY (`sensor_id`) REFERENCES `sensors` (`sensor_id`) ON DELETE CASCADE)
+  CONSTRAINT `sensor_data_ibfk_1` FOREIGN KEY (`sensor_id`) REFERENCES `farms` (`id`)ON DELETE CASCADE)
   ENGINE=InnoDB;
-
