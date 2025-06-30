@@ -1,6 +1,8 @@
+# overveiw
+- this project aim to help farmer to menitor his farm by using web application or mobile app or desktop application
 our team :
-1- mahmoud abdel hamed zakeer
-2- mahmoud tarek
-3- ahlam mohmed 
-4- doaa omer
-5- sohila fathy
+- mahmoud abdelhamid zakeer (web)
+- mahmoud tarek (api)
+- ahlam mohmed (mobile app)
+- doaa omer (desktop)
+- sohila fathy (database)
